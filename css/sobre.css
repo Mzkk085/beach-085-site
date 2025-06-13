@@ -1,0 +1,262 @@
+/* Estilos específicos para a página Sobre Nós */
+
+/* Seção Sobre */
+.secao-sobre {
+  padding: 80px 0;
+}
+
+.conteudo-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.imagem-sobre img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.texto-sobre h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: var(--cor-primaria);
+}
+
+.texto-sobre p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Seção Valores */
+.secao-valores {
+  padding: 80px 0;
+  background-color: var(--cor-clara);
+}
+
+.grade-valores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card-valor {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+}
+
+.card-valor:hover {
+  transform: translateY(-10px);
+}
+
+.icone-valor {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 160, 198, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+}
+
+.card-valor h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.card-valor p {
+  color: var(--cor-texto-claro);
+  font-size: 0.95rem;
+}
+
+/* Seção Equipe */
+.secao-equipe {
+  padding: 80px 0;
+}
+
+.grade-equipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.membro-equipe {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+}
+
+.membro-equipe:hover {
+  transform: translateY(-10px);
+}
+
+.imagem-membro {
+  height: 300px;
+  overflow: hidden;
+}
+
+.imagem-membro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.membro-equipe:hover .imagem-membro img {
+  transform: scale(1.05);
+}
+
+.membro-equipe h3 {
+  margin: 20px 20px 5px;
+  font-size: 1.3rem;
+}
+
+.cargo-membro {
+  margin: 0 20px 10px;
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+.bio-membro {
+  margin: 0 20px 20px;
+  color: var(--cor-texto-claro);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.social-membro {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px 20px;
+}
+
+.social-membro a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0, 160, 198, 0.1);
+  color: var(--cor-primaria);
+  transition: var(--transicao);
+}
+
+.social-membro a:hover {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+/* Seção CTA */
+.secao-cta {
+  padding: 80px 0;
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.conteudo-cta {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conteudo-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.conteudo-cta p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-social .botao-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: var(--transicao);
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.cta-social .botao-social:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .grade-valores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade-equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-sobre {
+    order: 1;
+  }
+
+  .texto-sobre {
+    order: 2;
+  }
+
+  .grade-equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grade-valores {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-equipe {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-social {
+    flex-direction: column;
+    align-items: center;
+  }
+}
