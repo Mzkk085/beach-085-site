@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach085 - Coast Company</title>
+  <link rel="icon" href="img/LogoBrancaB085-removebg-preview.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Barra de Navegação -->
+  <header class="barra-nav">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo">
+        </a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="acessorios.html">Acessórios</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+      <div class="icones-nav">
+        <a href="login.html" class="link-icone"><i class="fas fa-user"></i></a>
+        <a href="carrinho.html" class="link-icone icone-carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="menu-mobile">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="acessorios.html">Acessórios</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="login.html">Entrar</a></li>
+      <li><a href="carrinho.html">Carrinho</a></li>
+    </ul>
+  </div>
+
+  <!-- Seção Principal -->
+  <section class="secao-principal">
+    <video class="video-fundo" autoplay muted loop playsinline>
+      <source src="img/beiramar.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo-principal">
+      <h1 class="aparecer">Estilo à Beira-Mar</h1>
+      <p class="aparecer atraso-1">Descubra nossa coleção exclusiva de acessórios de praia para tornar seu verão inesquecível.</p>
+      <a href="produtos.html" class="botao botao-primario aparecer atraso-2">Ver Produtos</a>
+    </div>
+  </section>
+
+  <!-- Produtos em Destaque -->
+  <section class="produtos-destaque">
+    <div class="container">
+      <h2 class="titulo-secao">Produtos em Destaque</h2>
+      <div class="grade-produtos">
+        <!-- Produto 1 -->
+        <div class="card-produto" data-aos="fade-up">
+          <div class="imagem-produto">
+            <img src="img/produto1.png" alt="Chapéu de Praia">
+            <div class="etiquetas-produto">
+              <span class="etiqueta novo">Novo</span>
+            </div>
+          </div>
+          <div class="info-produto">
+            <h3>Chapéu de Palha Premium</h3>
+            <p class="descricao-produto">Proteção elegante contra o sol com nosso chapéu de palha artesanal.</p>
+            <div class="rodape-produto">
+              <p class="preco-produto">R$ 89,90</p>
+              <button class="botao-adicionar-carrinho" data-id="1" data-nome="Chapéu de Palha Premium" data-preco="89.90">
+                <i class="fas fa-shopping-cart"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card-produto" data-aos="fade-up" data-aos-delay="100">
+          <div class="imagem-produto">
+            <img src="img/produto2.png" alt="Óculos de Sol">
+            <div class="etiquetas-produto">
+              <span class="etiqueta mais-vendido">Mais Vendido</span>
+            </div>
+          </div>
+          <div class="info-produto">
+            <h3>Óculos de Sol Polarizado</h3>
+            <p class="descricao-produto">Proteção UV completa com estilo moderno e conforto o dia todo.</p>
+            <div class="rodape-produto">
+              <p class="preco-produto">R$ 149,90</p>
+              <button class="botao-adicionar-carrinho" data-id="2" data-nome="Óculos de Sol Polarizado" data-preco="149.90">
+                <i class="fas fa-shopping-cart"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card-produto" data-aos="fade-up" data-aos-delay="200">
+          <div class="imagem-produto">
+            <img src="img/produto3.png" alt="Bolsa de Praia">
+          </div>
+          <div class="info-produto">
+            <h3>Bolsa de Praia Tropical</h3>
+            <p class="descricao-produto">Espaçosa e estilosa, perfeita para carregar todos os seus itens de praia.</p>
+            <div class="rodape-produto">
+              <p class="preco-produto">R$ 119,90</p>
+              <button class="botao-adicionar-carrinho" data-id="3" data-nome="Bolsa de Praia Tropical" data-preco="119.90">
+                <i class="fas fa-shopping-cart"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="card-produto" data-aos="fade-up" data-aos-delay="300">
+          <div class="imagem-produto">
+            <img src="img/produto4.png" alt="Canga de Praia">
+            <div class="etiquetas-produto">
+              <span class="etiqueta promocao">Promoção</span>
+            </div>
+          </div>
+          <div class="info-produto">
+            <h3>Canga de Praia Mandala</h3>
+            <p class="descricao-produto">Versátil e colorida, pode ser usada como toalha, saída de praia ou decoração.</p>
+            <div class="rodape-produto">
+              <p class="preco-produto"><span class="preco-antigo">R$ 79,90</span> R$ 59,90</p>
+              <button class="botao-adicionar-carrinho" data-id="4" data-nome="Canga de Praia Mandala" data-preco="59.90">
+                <i class="fas fa-shopping-cart"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-ver-todos">
+        <a href="produtos.html" class="botao botao-secundario">Ver Todos os Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <div class="container">
+      <h2 class="titulo-secao">Categorias</h2>
+      <div class="grade-categorias">
+        <a href="produtos.html?categoria=chapeus" class="card-categoria" data-aos="zoom-in">
+          <div class="imagem-categoria">
+            <img src="img/fotocategoria1.png" alt="Chapéus">
+          </div>
+          <h3>Chapéus</h3>
+        </a>
+        <a href="produtos.html?categoria=oculos" class="card-categoria" data-aos="zoom-in" data-aos-delay="100">
+          <div class="imagem-categoria">
+            <img src="img/fotocategoria2.png" alt="Óculos">
+          </div>
+          <h3>Óculos</h3>
+        </a>
+        <a href="produtos.html?categoria=bolsas" class="card-categoria" data-aos="zoom-in" data-aos-delay="200">
+          <div class="imagem-categoria">
+            <img src="img/fotocategoria3.png" alt="Bolsas">
+          </div>
+          <h3>Bolsas</h3>
+        </a>
+        <a href="produtos.html?categoria=toalhas" class="card-categoria" data-aos="zoom-in" data-aos-delay="300">
+          <div class="imagem-categoria">
+            <img src="img/fotocategoria4.png" alt="Toalhas e Cangas">
+          </div>
+          <h3>Toalhas e Cangas</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedbacks -->
+  <section class="feedbacks">
+    <div class="container">
+      <h2 class="titulo-secao">O Que Os Nossos Clientes Falam?</h2>
+      <div class="slider-feedback">
+        <!-- Slide 1 -->
+        <div class="slide-feedback ativo">
+          <div class="conteudo-feedback">
+            <div class="texto-feedback">
+              <p>"Os produtos são de excelente qualidade! Meu chapéu de praia resistiu a toda a temporada de verão e continua lindo como novo. Vou indicar pra Yasmin!"</p>
+            </div>
+            <div class="autor-feedback">
+              <img src="img/guilhermeanime.jpg" alt="Cliente 1">
+              <div>
+                <h4>Guilherme</h4>
+                <div class="estrelas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide-feedback">
+          <div class="conteudo-feedback">
+            <div class="texto-feedback">
+              <p>"Entrega rápida e produtos exatamente como descritos. A bolsa de praia é super espaçosa e o design dela é lindo, AMEIII!"</p>
+            </div>
+            <div class="autor-feedback">
+              <img src="img/ayssa.jpg" alt="Cliente 2">
+              <div>
+                <h4>Ayssa Lima</h4>
+                <div class="estrelas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide-feedback">
+          <div class="conteudo-feedback">
+            <div class="texto-feedback">
+              <p>"Ótimo atendimento ao cliente! Tive um problema com meu pedido e a equipe resolveu rapidamente. Recomendo muito!"</p>
+            </div>
+            <div class="autor-feedback">
+              <img src="img/aloisiolindo.jpg" alt="Cliente 3">
+              <div>
+                <h4>Aloísio Sousa</h4>
+                <div class="estrelas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles do Slider -->
+      <div class="controles-feedback">
+        <button class="botao-feedback anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="pontos-feedback">
+          <span class="ponto ativo" data-slide="0"></span>
+          <span class="ponto" data-slide="1"></span>
+          <span class="ponto" data-slide="2"></span>
+        </div>
+        <button class="botao-feedback proximo">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="conteudo-newsletter">
+        <h2>Fique por dentro das novidades!</h2>
+        <p>Assine nossa newsletter e receba ofertas exclusivas, lançamentos e dicas de verão.</p>
+        <form id="formulario-newsletter" class="formulario-newsletter">
+          <input type="email" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="botao botao-primario">Assinar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="conteudo-rodape">
+        <div class="coluna-rodape">
+          <div class="logo-rodape">
+            <img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo">
+          </div>
+          <p>Acessórios de praia com estilo e qualidade para tornar seu verão inesquecível.</p>
+          <div class="links-sociais">
+            <a href="https://instagram.com/beach085_" target="_blank" class="link-social"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Links Rápidos</h3>
+          <ul class="links-rodape">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Categorias</h3>
+          <ul class="links-rodape">
+            <li><a href="produtos.html?categoria=chapeus">Chapéus</a></li>
+            <li><a href="produtos.html?categoria=oculos">Óculos</a></li>
+            <li><a href="produtos.html?categoria=bolsas">Bolsas</a></li>
+            <li><a href="produtos.html?categoria=toalhas">Toalhas e Cangas</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Contato</h3>
+          <ul class="info-contato">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Beira Mar, 1000 - Meireles</li>
+            <li><i class="fas fa-phone"></i> (85) 8748-5875</li>
+            <li><i class="fas fa-envelope"></i> contato@beach085.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-inferior">
+        <p>&copy; 2025 Beach085 - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="voltar-ao-topo" class="voltar-ao-topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
