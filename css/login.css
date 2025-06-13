@@ -1,0 +1,257 @@
+/* Estilos específicos para a página de login/cadastro */
+
+.secao-autenticacao {
+  padding: 80px 0;
+  margin-top: 80px;
+  background-color: var(--cor-clara);
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.container-autenticacao {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+
+.abas-autenticacao {
+  display: flex;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.aba-autenticacao {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transicao);
+  color: var(--cor-texto-claro);
+}
+
+.aba-autenticacao.ativo {
+  color: var(--cor-primaria);
+  border-bottom: 2px solid var(--cor-primaria);
+}
+
+.conteudo-autenticacao {
+  padding: 30px;
+  min-height: 400px;
+}
+
+.formulario-autenticacao {
+  display: none;
+}
+
+.formulario-autenticacao.ativo {
+  display: block;
+}
+
+.formulario-autenticacao h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subtitulo-autenticacao {
+  text-align: center;
+  color: var(--cor-texto-claro);
+  margin-bottom: 30px;
+}
+
+.grupo-formulario {
+  margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-com-icone {
+  position: relative;
+}
+
+.input-com-icone i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--cor-texto-claro);
+}
+
+.input-com-icone input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: var(--transicao);
+}
+
+.input-com-icone input:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 160, 198, 0.2);
+}
+
+.opcoes-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.container-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: var(--cor-primaria);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.esqueceu-senha {
+  color: var(--cor-primaria);
+  font-size: 0.9rem;
+}
+
+.largura-total {
+  width: 100%;
+}
+
+.login-social {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login-social p {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--cor-texto-claro);
+}
+
+.login-social p::before,
+.login-social p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: var(--cor-borda);
+}
+
+.login-social p::before {
+  left: 0;
+}
+
+.login-social p::after {
+  right: 0;
+}
+
+.botoes-sociais {
+  display: flex;
+  gap: 15px;
+}
+
+.botao-social {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+.botao-social.google {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.botao-social.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.botao-social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  .conteudo-autenticacao {
+    padding: 20px;
+  }
+
+  .opcoes-formulario {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .botoes-sociais {
+    flex-direction: column;
+  }
+}
