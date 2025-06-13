@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessórios - Beach085</title>
+    <link rel="icon" href="img/LogoBrancaB085-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/acessorios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="barra-nav">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo"></a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="acessorios.html" class="ativo">Acessórios</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+      <div class="icones-nav">
+        <a href="login.html" class="link-icone"><i class="fas fa-user"></i></a>
+        <a href="carrinho.html" class="link-icone icone-carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="menu-mobile">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="acessorios.html">Acessórios</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="login.html">Entrar</a></li>
+      <li><a href="carrinho.html">Carrinho</a></li>
+    </ul>
+  </div>
+  
+  <section class="secao-acessorios">
+    <div class="container">
+      <div class="layout-acessorios">
+        <div class="barra-lateral">
+          <div class="secao-filtro">
+            <h3>Categorias</h3>
+            <ul class="filtro-categoria">
+              <li><a href="#" class="ativo" data-categoria="todos">Todos os Acessórios</a></li>
+              <li><a href="#" data-categoria="joias">Joias de Praia</a></li>
+              <li><a href="#" data-categoria="protetores">Protetores Solares</a></li>
+              <li><a href="#" data-categoria="garrafas">Garrafas Térmicas</a></li>
+              <li><a href="#" data-categoria="jogos">Jogos de Praia</a></li>
+              <li><a href="#" data-categoria="outros">Outros Acessórios</a></li>
+            </ul>
+          </div>
+          <div class="secao-filtro">
+            <h3>Preço</h3>
+            <div class="filtro-preco">
+              <div class="inputs-preco">
+                <input type="number" id="preco-min" placeholder="Min" min="0">
+                <span>-</span>
+                <input type="number" id="preco-max" placeholder="Max" min="0">
+              </div>
+              <button id="aplicar-preco" class="botao botao-secundario">Aplicar</button>
+            </div>
+          </div>
+          <div class="secao-filtro">
+            <h3>Cores</h3>
+            <div class="filtro-cor">
+              <label class="opcao-cor">
+                <input type="checkbox" value="azul">
+                <span class="circulo-cor" style="background-color: #0066CC;"></span> Azul
+              </label>
+              <label class="opcao-cor">
+                <input type="checkbox" value="verde">
+                <span class="circulo-cor" style="background-color: #00AA44;"></span> Verde
+              </label>
+              <label class="opcao-cor">
+                <input type="checkbox" value="amarelo">
+                <span class="circulo-cor" style="background-color: #FFD700;"></span> Amarelo
+              </label>
+              <label class="opcao-cor">
+                <input type="checkbox" value="rosa">
+                <span class="circulo-cor" style="background-color: #FF69B4;"></span> Rosa
+              </label>
+              <label class="opcao-cor">
+                <input type="checkbox" value="branco">
+                <span class="circulo-cor" style="background-color: #FFFFFF; border: 1px solid #ccc;"></span> Branco
+              </label>
+            </div>
+          </div>
+          <div class="secao-filtro">
+            <h3>Avaliações</h3>
+            <div class="filtro-avaliacao">
+              <label class="opcao-avaliacao">
+                <input type="radio" name="avaliacao" value="5">
+                <div class="estrelas">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span>(5)</span>
+              </label>
+              <label class="opcao-avaliacao">
+                <input type="radio" name="avaliacao" value="4">
+                <div class="estrelas">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <span>& acima</span>
+              </label>
+              <label class="opcao-avaliacao">
+                <input type="radio" name="avaliacao" value="3">
+                <div class="estrelas">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="far fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <span>& acima</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="container-acessorios">
+          <div class="cabecalho-acessorios">
+            <div class="contador-acessorios">
+              <p>Mostrando <span id="total-acessorios">10</span> acessórios</p>
+            </div>
+            <div class="ordenar-acessorios">
+              <label for="ordenar-por">Ordenar por:</label>
+              <select id="ordenar-por">
+                <option value="relevancia">Relevância</option>
+                <option value="preco-menor">Preço: Menor para Maior</option>
+                <option value="preco-maior">Preço: Maior para Menor</option>
+                <option value="mais-recentes">Mais Recentes</option>
+              </select>
+            </div>
+          </div>
+          <div class="grade-acessorios"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="newsletter">
+    <div class="container">
+      <div class="conteudo-newsletter">
+        <h2>Fique por dentro das novidades!</h2>
+        <p>Assine nossa newsletter e receba ofertas exclusivas, lançamentos e dicas de verão.</p>
+        <form id="formulario-newsletter" class="formulario-newsletter">
+          <input type="email" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="botao botao-primario">Assinar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="rodape">
+    <div class="container">
+      <div class="conteudo-rodape">
+        <div class="coluna-rodape">
+          <div class="logo-rodape"><img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo"></div>
+          <p>Acessórios de praia com estilo e qualidade para tornar seu verão em Fortaleza inesquecível.</p>
+          <div class="links-sociais">
+            <a href="https://instagram.com/beach085_" target="_blank" class="link-social"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Links Rápidos</h3>
+          <ul class="links-rodape">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Categorias</h3>
+          <ul class="links-rodape">
+            <li><a href="produtos.html?categoria=chapeus">Chapéus</a></li>
+            <li><a href="produtos.html?categoria=oculos">Óculos</a></li>
+            <li><a href="produtos.html?categoria=toalhas">Toalhas e Cangas</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Contato</h3>
+          <ul class="info-contato">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Beira Mar, 1000 - Meireles</li>
+            <li><i class="fas fa-phone"></i> (85) 8748-5875</li>
+            <li><i class="fas fa-envelope"></i> contato@beach085.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-inferior">
+        <p>© 2025 Beach085 - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="voltar-ao-topo" class="voltar-ao-topo"><i class="fas fa-arrow-up"></i></button>
+  
+  <script src="js/script.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/acessorios.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Beach085</title>
+  <link rel="icon" href="img/LogoBrancaB085-removebg-preview.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/carrinho.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Barra de Navegação -->
+  <header class="barra-nav">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo">
+        </a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="acessorios.html">Acessórios</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+      <div class="icones-nav">
+        <a href="login.html" class="link-icone"><i class="fas fa-user"></i></a>
+        <a href="carrinho.html" class="link-icone icone-carrinho ativo">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="menu-mobile">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="acessorios.html">Acessórios</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="login.html">Entrar</a></li>
+      <li><a href="carrinho.html">Carrinho</a></li>
+    </ul>
+  </div>
+
+  <!-- Seção do Carrinho -->
+  <section class="secao-carrinho">
+    <div class="container">
+      <h1 class="titulo-pagina">Seu Carrinho</h1>
+      
+      <div class="container-carrinho">
+        <div class="itens-carrinho">
+          <div class="cabecalho-carrinho">
+            <div class="info-produto-carrinho">Produto</div>
+            <div class="preco-carrinho">Preço</div>
+            <div class="quantidade-carrinho">Quantidade</div>
+            <div class="total-carrinho">Total</div>
+            <div class="remover-carrinho"></div>
+          </div>
+          
+          <div id="container-itens-carrinho">
+            <!-- Os itens do carrinho serão carregados via JavaScript -->
+            <div class="carrinho-vazio">
+              <i class="fas fa-shopping-cart"></i>
+              <p>Seu carrinho está vazio</p>
+              <a href="produtos.html" class="botao botao-primario">Continuar Comprando</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="resumo-carrinho">
+          <h2>Resumo do Pedido</h2>
+          
+          <div class="linha-resumo">
+            <span>Subtotal</span>
+            <span id="subtotal-carrinho">R$ 0,00</span>
+          </div>
+          
+          <div class="linha-resumo">
+            <span>Frete</span>
+            <span id="frete-carrinho">R$ 0,00</span>
+          </div>
+          
+          <div class="linha-resumo desconto">
+            <span>Desconto</span>
+            <span id="desconto-carrinho">-R$ 0,00</span>
+          </div>
+          
+          <div class="divisor-resumo"></div>
+          
+          <div class="linha-resumo total">
+            <span>Total</span>
+            <span id="total-carrinho">R$ 0,00</span>
+          </div>
+          
+          <div class="container-cupom">
+            <input type="text" id="codigo-cupom" placeholder="Código promocional">
+            <button id="aplicar-cupom" class="botao botao-secundario">Aplicar</button>
+          </div>
+          
+          <button id="botao-finalizar" class="botao botao-primario largura-total">Finalizar Compra</button>
+          
+          <a href="produtos.html" class="continuar-comprando">
+            <i class="fas fa-arrow-left"></i> Continuar Comprando
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="conteudo-rodape">
+        <div class="coluna-rodape">
+          <div class="logo-rodape">
+            <img src="img/LogoBrancaB085-removebg-preview.png" alt="Beach085 Logo">
+          </div>
+          <p>Acessórios de praia com estilo e qualidade para tornar seu verão em Fortaleza inesquecível.</p>
+          <div class="links-sociais">
+            <a href="https://instagram.com/beach085_" target="_blank" class="link-social"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Links Rápidos</h3>
+          <ul class="links-rodape">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Categorias</h3>
+          <ul class="links-rodape">
+            <li><a href="produtos.html?categoria=chapeus">Chapéus</a></li>
+            <li><a href="produtos.html?categoria=oculos">Óculos</a></li>
+            <li><a href="produtos.html?categoria=toalhas">Toalhas e Cangas</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Contato</h3>
+          <ul class="info-contato">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Beira Mar, 1000 - Meireles</li>
+            <li><i class="fas fa-phone"></i> (85) 8748-5875</li>
+            <li><i class="fas fa-envelope"></i> contato@beach085.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-inferior">
+        <p>&copy; 2025 Beach085 - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/produtos.js"></script>
+  <script src="js/acessorios.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
